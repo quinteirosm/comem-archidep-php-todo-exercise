@@ -8,9 +8,9 @@
 define('BASE_URL', 'http://localhost/comem-archidep-php-todo-exercise/');
 
 // Database connection parameters.
-define('DB_USER', 'todolist');
-define('DB_PASS', 'root');
-define('DB_NAME', 'todolist');
+        define('DB_USER', 'todolist');
+        define('DB_PASS', 'root');
+        define('DB_NAME', 'todolist');
         define('DB_HOST', 'localhost');
         define('DB_PORT', '3306');
 
@@ -60,7 +60,7 @@ if (isset($_POST['action'])) {
 
       $id = $_POST['id'];
       if(is_numeric($id)) {
-        $deleteQuery = ''; // IMPLEMENT ME
+        $deleteQuery = "DELETE from todo where id = '$id'";
         if(!$db->query($deleteQuery)) {
           die(print_r($db->errorInfo(), true));
         }
