@@ -5,8 +5,7 @@
 // "http://localhost:8888/comem-archidep-php-todo-exercise/", then BASE_URL
 // should be "/comem-archidep-php-todo-exercise/". If you are accessing the
 // application at "http://localhost:8888", then BASE_URL should be "/".
-//define('BASE_URL', 
-'http://localhost/comem-archidep-php-todo-exercise/');
+//define('BASE_URL', 'http://localhost/comem-archidep-php-todo-exercise/');
 
 // Database connection parameters.
 	define('BASE_URL', getenv('TODOLIST_BASE_URL') ?: '/');
