@@ -7,6 +7,7 @@
 // application at "http://localhost:8888", then BASE_URL should be "/".
 define('BASE_URL', getenv('RENDER_EXTERNAL_URL') ?: '/');
 
+
 // Database connection parameters.
 define('DB_USER', getenv('DB_USER') ?: '');
 define('DB_PASS', getenv('DB_PASS') ?: '');
